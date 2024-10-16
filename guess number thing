@@ -1,0 +1,46 @@
+# authors: Rash Marie Leduc <cleduc2818533@woonsocketschools.com> Zachary curran zcurran2801931@woonsocketschools.com
+#  date written: 10/16/2024
+print("Hello User.")
+User =input("What is your name?: ")
+print("Your name is",User,"?")
+print("The computer will generate a number.")
+print("You will guess this number")
+print("If the number is wrong it is a Gnarp!")
+print("If the answer is correct it is a Spud!")
+import random
+secret_number = random.randint(1, 100)
+guess = None
+attempts = 0
+import random
+secret_number = random.randint(1, 100)
+guess = None
+attempts = 0
+print("Guess the number between 1 and 100")
+while guess != secret_number:
+    guess = int(input("Enter your guess: "))
+    attempts += 1
+    if guess < secret_number:
+        print("Gnarp Gnarp! higher!")
+    elif guess > secret_number:
+        print("Gnarp Gnarp! Lower!")
+    else:
+        print("Congratulations!",User,"You guessed the number, Spud Spud!")
+print("You took{attempts}attempts to guess the correct number.")
+again =input("would you like to play again?: ")
+again =input("would you like to play again?: ")
+if again == "yes":
+        counter = secret_number = random.randint(1, 100)
+guess = None
+attempts = 0
+print("Guess the number between 1 and 100")
+while guess != secret_number:
+    guess = int(input("Enter your guess: "))
+    attempts += 1
+    if guess < secret_number:
+        print("Gnarp Gnarp! higher!")
+    elif guess > secret_number:
+        print("Gnarp Gnarp! Lower!")
+    else:
+        print("Congratulations!",User,"You guessed the number, Spud Spud!")
+print("You took{attempts}attempts to guess the correct number.")
+again =input("would you like to play again?: ")
